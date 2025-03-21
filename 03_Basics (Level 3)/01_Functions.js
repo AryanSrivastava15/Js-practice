@@ -31,5 +31,33 @@ function loginUserMessage(username){
     return `${username} just logged in.`
 }
 
-loginUserMessage()
+// loginUserMessage()
 // console.log(loginUserMessage("Aryan"))
+
+function calculateCartPrice(...num1){ // if (val1, val2, ...num) is ther
+    return num1 
+}                                     // it will return [4, 5]
+
+// console.log(calculateCartPrice(2, 3, 4, 5))
+const user = {
+    userName: "Aryan",
+    price: 122
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.userName} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+handleObject({
+    userName: "Noah",
+    price: 2345
+})
+
+const myNewArr = [200, 300, 400, 500]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArr))
