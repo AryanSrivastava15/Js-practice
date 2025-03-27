@@ -1,0 +1,15 @@
+1. document.getElementById('title')
+-> Returns the element and its details
+
+2. document.getElementById('title')._______
+    i. id
+    ii. className
+    iii. getAttributes('_____')
+        a. id
+        b. class
+    iv. setAttribute('_______', '________')
+
+3. const title = document.getElementById('title')
+-> title.style.backgroundColor = 'green'
+-> title.style.padding = "15px"
+-> title.style.borderRadius = "15px"
