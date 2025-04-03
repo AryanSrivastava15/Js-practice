@@ -13,3 +13,32 @@
 -> title.style.backgroundColor = 'green'
 -> title.style.padding = "15px"
 -> title.style.borderRadius = "15px"
+-> title.textContent = returns text content only even if its not visible to user
+-> title.innerHTML = returns text with any other inner HTML before closing tag
+-> title.innerText = returns only the visible text
+
+Note: Similarly we can document.getElementByClassName('_____')
+
+4. .querySelector('_____')
+-> document.querySelector('h1') = Returns 1st h1
+-> document.querySelector('#title') = Returns complete HTML of id title {<h1>____</h1>}
+-> document.querySelector('input[type = "password"]')
+-> document.querySelector('p:first-child')
+-> const myul = document.querySelector('ul')
+    myul.innerHTML = "four\nfive\nsix"
+-> const tempList = document.querySelectorAll('li') = selects all li and save in NodeList
+    tempList[0].style.color = 'green'
+    tempList.forEach(functiom(l) {
+        l.style.backgroundColor = 'green'
+    })
+
+5. document.getElementsByClassName('______')
+-> const tempClassList = document.getElementsByClassName('list-item')
+    tempClassList.forEach(function(li) {
+        console.log(li)
+    })  //Will not run as tempClassList dont have forEach
+
+    const myConvertedArray = Array.from(tempClassList) //Converted to Array
+    myConvertedArray.forEach(function(li) {
+        console.log(li)
+    })
