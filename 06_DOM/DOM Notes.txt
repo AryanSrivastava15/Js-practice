@@ -31,6 +31,8 @@ Note: Similarly we can document.getElementByClassName('_____')
     tempList.forEach(functiom(l) {
         l.style.backgroundColor = 'green'
     })
+-> NodeList is not exactly like arrays so we cannot perform array functions on them.
+-> querySelectorAll always return a NodeList.
 
 5. document.getElementsByClassName('______')
 -> const tempClassList = document.getElementsByClassName('list-item')
