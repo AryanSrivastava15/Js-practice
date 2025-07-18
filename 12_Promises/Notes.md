@@ -1,0 +1,15 @@
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+A Promise is in one of these states:
+
+1. pending: initial state, neither fulfilled nor rejected.
+2. fulfilled: meaning that the operation was completed successfully.
+3. rejected: meaning that the operation failed.
+
+A promise is said to be settled if it is either fulfilled or rejected, but not pending.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
